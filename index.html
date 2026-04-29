@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Vida Submarina - Campus Texcoco</title>
+    <!-- Preconnect y fuentes para mejorar rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (iconos para navegación y controles) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container">
+    <!-- PORTADA principal con info campus e integrantes -->
+    <section class="hero" id="portada">
+        <div class="campus-badge">
+            <i class="fas fa-fish"></i> Campus: Texcoco <i class="fas fa-water"></i>
+        </div>
+        <h1>Vida Submarina</h1>
+        <p style="font-size: 1.2rem; max-width: 700px; margin-bottom: 1rem;">Explora las profundidades, cuida los océanos y descubre la belleza oculta bajo el mar.</p>
+        
+        <div class="integrantes">
+            <span class="integrante"><i class="fas fa-star"></i> Alejandra Zarina López Ponce</span>
+            <span class="integrante"><i class="fas fa-star"></i> Ana Sofia López Gaviño</span>
+            <span class="integrante"><i class="fas fa-star"></i> Elizabeth Merari Ruiz Gonzales</span>
+            <span class="integrante"><i class="fas fa-star"></i> Jesus Sebastian Gallegos Ramirez</span>
+            <span class="integrante"><i class="fas fa-star"></i> Marbella Perez Negron Quintero</span>
+            <span class="integrante"><i class="fas fa-star"></i> Aylin Dayana Flores Velazquez</span>
+        </div>
+
+        <div class="hero-buttons">
+            <button id="goToMarqueeBtn" class="btn-submarine"><i class="fas fa-scroll"></i> Ver Marquesina</button>
+            <button id="goToCarouselBtn" class="btn-submarine"><i class="fas fa-images"></i> Explorar Carrusel</button>
+        </div>
+    </section>
+
+    <!-- MARQUESINA (sección independiente) -->
+    <section id="marquesina-seccion" class="marquee-section">
+        <div class="section-title">
+            <i class="fas fa-dove" style="color: #90e0ef;"></i> 📢 Mensajes del Océano
+        </div>
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <span>
+                    🌊 ¡Cuidemos los océanos! Cada acción cuenta 🐠 · Las praderas de pastos marinos almacenan carbono 🌿 · Los arrecifes de coral son los "bosques tropicales del mar" 🪸 · Más del 70% de la Tierra está cubierta por agua · La vida submarina es fascinante: pulpos, caballitos de mar, tiburones ballena 🐙🦑 · Reducir plásticos salva especies marinas 🐢 · Juntos por un futuro azul 💙 ·
+                </span>
+            </div>
+        </div>
+        <p style="text-align: center; margin: 1rem 0 0.5rem; font-style: italic;">🐟 Datos curiosos y reflexiones sobre la vida submarina</p>
+    </section>
+
+    <!-- CARRUSEL DE IMÁGENES (vida submarina real) -->
+    <section id="carrusel-seccion" class="carousel-section">
+        <div class="section-title">
+            <i class="fas fa-camera-retro"></i> Galería Submarina
+        </div>
+        <div class="carousel-container">
+            <div class="carousel-slides" id="carouselSlides">
+                <!-- Las imágenes se cargarán desde JS -->
+            </div>
+            <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-caption" id="dynamicCaption">Tortuga en arrecife</div>
+        </div>
+        <div class="dots" id="dotsContainer"></div>
+    </section>
+    <footer>
+        <p>🌊 Campus Texcoco · Proyecto Vida Submarina · Inspiración y conservación marina</p>
+    </footer>
+</div>
+
+<!-- JavaScript externo -->
+<script src="script.js"></script>
+</body>
+</html>
